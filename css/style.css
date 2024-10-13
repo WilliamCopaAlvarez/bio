@@ -1,0 +1,42 @@
+.padre {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(54, 49, 49);
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "cont1 cont2 cont3"
+        "foot foot foot";
+}
+
+.padre .header {
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+    background-color: rgb(35, 35, 35);
+padding: 20px 0;
+color: white;
+}
+
+.padre .nav {
+    grid-area: nav;
+}
+
+.padre .cont1 {
+    grid-area: cont1;
+}
+
+.padre .cont2 {
+    grid-area: cont2;
+}
+
+.padre .cont3 {
+    grid-area: cont3;
+}
+
+.padre .foot {
+    grid-area: foot;
+}
